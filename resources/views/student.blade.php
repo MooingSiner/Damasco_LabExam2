@@ -3,11 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+    <title>Dashboard</title>
 </head>
 <body>
-    <h1>Dashboard</h1>
-    <a href="{{ route('view') }}">View</a>
-    <a href="{{ route('create') }}">Create</a>
+    <div class="container">
+        <h1>Student Dashboard</h1>
+        <div class="nav-links">
+            <a href="{{ route('view') }}">View Students</a>
+            <a href="{{ route('create') }}">Create Student</a>
+        </div>
+    </div>
 </body>
 </html>
